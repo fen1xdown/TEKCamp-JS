@@ -39,3 +39,6 @@
     
     
     10. Finally, use the focus() method to focus the input element ready for entering the next shopping list item.
+
+*/
+

@@ -74,35 +74,10 @@ function Clicked() {
     items.appendChild(node);
     item.value = "";
     document.getElementById("ul").appendChild(items);
-    //list.appendChild(items);
 
-    //items.appendChild(span);
-    //items.appendChild(button);
 
 }
 
 window.onload = function () {
     start(document.body)
 };
-
-//var list = document.querySelector('ul');
-//var input = document.getElementById('item');
-//var button = document.getElementsByTagName('button').setAttribute("name", "user_button");
-
-//button.addEventListener("click", () => {
-//    var text = input.value;
-//    console.log("input = " + text);
-//    input.value = "";
-//    console.log("end of button listener");
-//})
-
-//let items = document.createElement('li');
-//let span = document.createElement('span');
-//let btn = document.createElement('button');
-
-//items.appendChild(span);
-//items.appendChild(btn);
-
-//window.onload = function () {
-//    //document.get
-//}

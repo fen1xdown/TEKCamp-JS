@@ -53,34 +53,27 @@ var items = document.createElement("li");
 function start() { 
     document.getElementsByTagName("button")[0].setAttribute("id", "btn");
     document.getElementsByTagName("button")[0].setAttribute("onclick", "Clicked(btn)");
-    document.getElementsByTagName("ul")[0].setAttribute("name", "ul");
+    document.getElementsByTagName("ul")[0].setAttribute("id", "ul");
     list.value = 0;
-    //list.appendChild(items);
     node0 = document.createTextNode("");
     items.appendChild(node0);
-    //list.appendChild(items);
     console.log(list);
 };
 
 function Clicked() {
     console.log(item.value);
 
-    //var lisFrag = document.createDocumentFragment();
-    //for (var i = 0; i < lis.length; i++) {
-    //    lisFrag.appendChild(lis[i]);
-    //}
-
     var text = item.value;
     console.log("text = " + text);
-    //var items = document.createElement("li");
+    var items = document.createElement("li");
     var span = document.createElement("span");
     var button = document.createElement("button");
 
     var node = document.createTextNode(text);
     console.log("node = " + node);
-
-    //list.appendChild(document.createTextNode(text));
+    items.appendChild(node);
     item.value = "";
+    document.getElementById("ul").appendChild(items);
     //list.appendChild(items);
 
     //items.appendChild(span);

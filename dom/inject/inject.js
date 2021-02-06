@@ -1,6 +1,9 @@
 /*Exercise instructions : take the html code from the following codepen : https://codepen.io/ayunas-the-scripter/pen/WNQgpqB, and use JavaScript DOM manipulation to inject the html into the inject id element of inject.html.  You are not allowed to simply set the innerHTML of the <div> to the entire html document. 
 */
 
+// So, if I'm reading the instructions right, the code at the top prints the correct order, but isn't allowed.
+// The bottom is more in line with what the instructions say, but doesn't quite accomplish the task at hand.
+
 //function Injection() {
 //	var inject = document.getElementById("inject");
 //	inject.innerHTML += "<h1><i>HTML Practice Exercise TEKcamp.</i></h1>"
@@ -42,12 +45,12 @@ function injecting() {
 		createIl("It's fun")
 	];
 
-	var docFrag = document.createDocumentFragment();
+	var lisFrag = document.createDocumentFragment();
 	for (var i = 0; i < lis.length; i++) {
-		docFrag.appendChild(lis[i]); 
+		lisFrag.appendChild(lis[i]); 
 	}
 
-	document.body.appendChild(docFrag); 
+	document.body.appendChild(lisFrag); 
 
 	var node4 = document.createTextNode("My instructors email address is: ayunas@teksystems.com.  really look forward to learning how to code!  Have a great day.");
 
@@ -66,3 +69,5 @@ function injecting() {
 
 	ol.insertBefore(p2, null)
 }
+
+
